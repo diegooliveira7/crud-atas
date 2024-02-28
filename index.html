@@ -5,8 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <div class="container">
+        <div class="header">
+            <span>Cadastro de Atas</span>
+            <button onclick="openModal" id="new">Incluir</i></button>
+        </div>
+
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Número</th>
+                        <th>Igreja</th>
+                        <th>Secretário</th>
+                        <th>Data</th>
+                        <th class="acao">Editar</th>
+                        <th class="acao">Excluir</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="m-number">Número</label>
+                    <input id="m-number" type="text" required />
+
+                    <label for="m-church">Igreja</label>
+                    <input id="m-church" type="text" required />
+
+                    <label for="m-sec">Secretário</label>
+                    <input id="m-sec" type="text" required />
+
+                    <label for="m-date">Data</label>
+                    <input id="m-date" type="text" required />
+
+                    <button id="btnSave">Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
     
     <script src="script.js"></script>
 </body>
