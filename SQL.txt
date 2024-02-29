@@ -1,0 +1,8 @@
+alter user 'root'@'localhost' identified with mysql_native_password by '****Senha****';
+
+CREATE TABLE `crudatas`.`atas` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `secretario` VARCHAR(255) NOT NULL,
+  `igreja` VARCHAR(255) NOT NULL,
+  `data` DATE NOT NULL,
+  PRIMARY KEY (`id`));
