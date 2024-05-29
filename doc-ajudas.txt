@@ -1,0 +1,5 @@
+* No banco de dados a primeira vez que usa tem que rodar o seguinte comando: alter user 'root'@'localhost' identified with mysql_native_password by 'Cavalo123*';
+* Quando vai subir o projeto com yarn start, deu um erro de proteção de dados, para corrigir esse erro eu rodei o seguinte comando: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+* comando para configurar a pasta front: npx create-react-app ./ 
+* sem seguida: yarn add styled-components axios react-icons react-toastify (terminar de configurar o front)
